@@ -8,6 +8,8 @@ const axios = require('axios').default;
 require("dotenv").config();
 //const getCollection = require("./getCollection.js");
 
+//const permitWallets = ["",""];
+
 const collection = (req,res) => {
       var options = {
         method: 'POST',
@@ -26,7 +28,8 @@ const collection = (req,res) => {
           treasury_address: '0x105f83C74aD66776e317ABa4AeC1FB392cCa7c37',
           public_mint_start_date: req.body.fechaLanzamiento, //formato '2022-02-08T11:30:48+00:00',
           metadata_updatable: true,
-          base_uri: req.body.baseURI
+          base_uri: "",
+          prereveal_token_uri:req.body.baseURI
         }
       };
       
