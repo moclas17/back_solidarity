@@ -14,7 +14,7 @@ const collection = (req,res) => {
         url: 'https://api.nftport.xyz/v0/contracts/collections',
         headers: {'Content-Type': 'application/json', Authorization: process.env.API_KEY},
         data: {
-          chain: 'polygon',
+          chain: 'rinkeby',
           name: req.body.name,
           symbol: req.body.simbol,
           max_supply: req.body.maxSupply,
