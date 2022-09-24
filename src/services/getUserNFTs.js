@@ -16,7 +16,7 @@ const getUserNFTsForProfile = (req, res) => {
   var options = {
       method: 'GET',
       url: 'https://api.nftport.xyz/v0/accounts/'+address,
-      params: {chain: 'rinkeby'},
+      params: {chain:  process.env.CHAIN },
       headers: {
         'Content-Type': 'application/json',
         Authorization: process.env.API_KEY
