@@ -8,15 +8,13 @@ const axios = require('axios').default;
 require("dotenv").config();
 //const getCollection = require("./getCollection.js");
 
-//const permitWallets = ["",""];
-
 const collection = (req,res) => {
       var options = {
         method: 'POST',
         url: 'https://api.nftport.xyz/v0/contracts/collections',
         headers: {'Content-Type': 'application/json', Authorization: process.env.API_KEY},
         data: {
-          chain: 'rinkeby',
+          chain: 'polygon',
           name: req.body.name,
           symbol: req.body.simbol,
           max_supply: req.body.maxSupply,

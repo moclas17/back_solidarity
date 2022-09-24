@@ -11,7 +11,7 @@ const getCollections = (req, res) => {
     var options = {
         method: 'GET',
         url: 'https://api.nftport.xyz/v0/me/contracts/collections',
-        params: {chain: 'rinkeby'},
+        params: {chain: 'polygon'},
         headers: {'Content-Type': 'application/json', Authorization: process.env.API_KEY}
       };
       
