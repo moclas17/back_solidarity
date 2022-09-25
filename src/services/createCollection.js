@@ -8,10 +8,10 @@ const axios = require("axios").default;
 require("dotenv").config();
 
 const permitWallets = [
-	"0x0e88AC34917a6BF5E36bFdc2C6C658E58078A1e6",
-	"0x105f83C74aD66776e317ABa4AeC1FB392cCa7c37",
-	"0x6525BcC36B71371514a1faAf1966395B6c7bE599",
-	"0x76D9995e68a44B786a665E5631d06fbbdA047eE2",
+	"0x0e88AC34917a6BF5E36bFdc2C6C658E58078A1e6".toLowerCase(),
+	"0x105f83C74aD66776e317ABa4AeC1FB392cCa7c37".toLowerCase(),
+	"0x6525BcC36B71371514a1faAf1966395B6c7bE599".toLowerCase(),
+	"0x76D9995e68a44B786a665E5631d06fbbdA047eE2".toLowerCase(),
 ];
 let valid = false;
 
